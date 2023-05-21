@@ -100,14 +100,18 @@ nav {
 }
 
 /* ------------------GALLERY------------------ */
-.galleryInfo {
+.galleryFrame {
   padding: 10% 10%;
+  background-color: var(--White);
+}
+
+.galleryInfo {
   display: flex;
   position: relative;
 }
 
 .gallery-image {
-  flex-basis: 50%;
+  flex-basis: 70%;
   max-width: 900px;
 }
 
@@ -117,28 +121,31 @@ nav {
 
 .info-card {
   position: absolute;
-  width: 490px;
-  padding: 80px;
+  flex-basis: 30%;
+  width: 630px;
+  padding: 90px;
   background-color: var(--White);
   /* background-color: red; */
-  right: 400px;
+  right: -97px;
   z-index: 2;
-  top: 50%;
+  top: 45%;
 }
 
 .subtitle {
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 44px;
   color: var(--Black);
   letter-spacing: 3px;
   margin-bottom: 20px;
+  max-width: 420px;
+  font-weight: 400;
 }
 
 .cardInfo {
   color: var(--Dark-Gray);
   font-family: "Alata", sans-serif;
   font-weight: 400;
-  font-size: 11px;
+  font-size: 15px;
   line-height: 25px;
 }
 /* ----------------MEDIA QUERY------------------ */
@@ -208,10 +215,11 @@ nav {
   }
 
   /* ------------Gallery------------- */
-
+  .galleryFrame {
+    padding: 20% 20px;
+  }
   .galleryInfo {
     flex-direction: column;
-    padding: 20% 20px;
   }
   .gallery-image {
     width: 100%;
