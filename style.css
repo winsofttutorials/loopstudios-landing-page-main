@@ -99,6 +99,48 @@ nav {
   color: hsl(228, 45%, 44%);
 }
 
+/* ------------------GALLERY------------------ */
+.galleryInfo {
+  padding: 10% 10%;
+  display: flex;
+  position: relative;
+}
+
+.gallery-image {
+  flex-basis: 50%;
+  max-width: 900px;
+}
+
+.gallery-image img {
+  width: 100%;
+}
+
+.info-card {
+  position: absolute;
+  width: 490px;
+  padding: 80px;
+  background-color: var(--White);
+  /* background-color: red; */
+  right: 400px;
+  z-index: 2;
+  top: 50%;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: var(--Black);
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.cardInfo {
+  color: var(--Dark-Gray);
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 25px;
+}
 /* ----------------MEDIA QUERY------------------ */
 
 @media (max-width: 375px) {
@@ -163,5 +205,34 @@ nav {
     max-width: 350px;
     font-size: 42px;
     margin-top: 37%;
+  }
+
+  /* ------------Gallery------------- */
+
+  .galleryInfo {
+    flex-direction: column;
+    padding: 20% 20px;
+  }
+  .gallery-image {
+    width: 100%;
+  }
+
+  .info-card {
+    position: unset;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+  .cardInfo {
+    max-width: 280px;
+    margin: auto;
+    font-size: 15px;
+    font-weight: 400px;
   }
 }
