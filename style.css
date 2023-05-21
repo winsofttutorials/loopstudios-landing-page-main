@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alata", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+}
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+body {
+  font-family: "Alata", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  min-height: 100vh;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.hero {
+  background-image: url("./images/desktop/image-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 40px 10%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo1 {
+  display: none;
+}
+.navLinks ul {
+  flex: 1;
+  list-style: none;
+}
+
+.navLinks ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.navLinks ul li a {
+  text-decoration: none;
+  color: var(--White);
+  font-family: "Alata", sans-serif;
+  position: relative;
+}
+
+.navLinks ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -8px;
+  background-color: var(--White);
+  transition: width 0.4s;
+}
+
+.navLinks ul li a:hover::after {
+  width: 100%;
+}
+
+.menuIcon {
+  display: none;
+}
+
+/* -----------------------hero content----------- */
+.title {
+  margin-top: 15%;
+  font-size: 80px;
+  text-transform: uppercase;
+  max-width: 700px;
+  border: 2px solid var(--White);
+  padding: 20px;
+  color: var(--White);
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* ----------------MEDIA QUERY------------------ */
+
+@media (max-width: 375px) {
+  .hero {
+    background-image: url("./images/mobile/image-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+
+  .logo1 {
+    display: block;
+  }
+
+  nav {
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  .navLinks {
+    width: 100%;
+    background-color: var(--Black);
+    height: 100vh;
+    top: 0;
+    right: -375px;
+    position: fixed;
+    padding: 40px 20px;
+    transition: 0.5s;
+  }
+
+  .navLinks ul {
+    margin-top: 120px;
+  }
+
+  .navLinks ul li {
+    display: block;
+    margin: 20px 0;
+  }
+  .navLinks ul li a {
+    font-size: 24px;
+    font-weight: 300;
+    font-weight: 300;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+  }
+
+  .closeMenu {
+    position: absolute;
+    top: 45px;
+    right: 20px;
+  }
+
+  .title {
+    max-width: 350px;
+    font-size: 42px;
+    margin-top: 37%;
+  }
+}
