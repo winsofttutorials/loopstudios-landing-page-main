@@ -163,6 +163,10 @@ nav {
   margin-bottom: 20px;
 }
 
+.subtitle2 {
+  font-size: 28px;
+}
+
 .seeBtn {
   border: 1px solid var(--Black);
   outline: 0;
@@ -173,6 +177,12 @@ nav {
   font-size: 10px;
   font-weight: 300;
   letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.seeBtn:hover {
+  background-color: var(--Black);
+  color: var(--White);
 }
 
 .frame2 {
@@ -408,7 +418,7 @@ footer {
 
   /* -----------------CREATIONS------------------- */
   .creationsMedia {
-    padding: 20px 20px;
+    padding: 0 20px 20px;
     position: relative;
   }
 
