@@ -184,11 +184,19 @@ nav {
   padding: 20px;
   font-family: "Alata", sans-serif;
   font-size: 20px;
-  text-transform: uppercase;
+  position: relative;
   color: var(--White);
   max-height: 100%;
   height: 400px;
   width: min(50%, 280px);
+}
+
+.galleryText {
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  max-width: 130px;
+  font-size: 25px;
 }
 
 .userGallery1 {
